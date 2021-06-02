@@ -57,10 +57,12 @@ configure_file(
 
 set(PLUGIN_SOURCES
 	src/plugin-main.c
-    src/obs-text-slideshow.c)
+    src/obs-text-slideshow.c
+    src/freetype2-source.c)
 
 set(PLUGIN_HEADERS
 	src/plugin-macros.generated.h)
+    #src/freetype2-source.h)
 
 # --- Platform-independent build settings ---
 add_library(${CMAKE_PROJECT_NAME} MODULE ${PLUGIN_SOURCES} ${PLUGIN_HEADERS})
